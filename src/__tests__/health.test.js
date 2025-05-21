@@ -1,6 +1,10 @@
 import getHealthStatus from '../health';
 
 describe('getHealthStatus', () => {
+  test('returns correct status', () => {
+    expect(getHealthStatus({ health: 90 })).toBe('healthy');
+  });
+  
   test('returns "healthy" when health is more than 50', () => {
     expect(getHealthStatus({ health: 90 })).toBe('healthy');
   });
@@ -14,3 +18,4 @@ describe('getHealthStatus', () => {
     expect(getHealthStatus({ health: 10 })).toBe('critical');
   });
 });
+

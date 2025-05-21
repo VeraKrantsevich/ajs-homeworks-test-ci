@@ -1,26 +1,30 @@
 {
+  "name": "ajs-homeworks-test-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
     "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --ext .js --fix"
+    "lint:fix": "eslint . --ext .js --fix",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
   },
-  "name": "ajs-homeworks-test-ci",
-  "version": "1.0.0",
-  "main": "index.js",
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.27.2",
-    "@babel/core": "^7.27.1",
-    "@babel/preset-env": "^7.27.2",
-    "@eslint/js": "^9.27.0",
-    "@stylistic/eslint-plugin": "^4.2.0",
-    "eslint": "^9.27.0",
-    "jest": "^29.7.0"
-  },
-  "dependencies": {
-    "core-js": "^3.42.0"
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@eslint/js": "^9.3.0",
+    "@stylistic/eslint-plugin": "^1.5.0",
+    "babel-loader": "^10.0.0",
+    "core-js": "^3.35.1",
+    "eslint": "^9.3.0",
+    "eslint-plugin-jest": "^28.9.0",
+    "jest": "^29.7.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
   }
 }
